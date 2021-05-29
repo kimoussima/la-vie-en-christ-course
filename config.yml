@@ -1,0 +1,16 @@
+title: La vie en christ
+description: La vie en christ c est vivre comme Dieu veut
+template:
+  repo: la-vie-en-christ-template
+  name: la-vie-en-christ
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
